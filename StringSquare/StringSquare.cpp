@@ -5,7 +5,7 @@ typedef unsigned int uint16_t;
 
 class StringSquare {
 public:
-	uint16_t calcSquare(uint16_t shortside, uint16_t square) {
+	uint16_t calcRectangle(uint16_t shortside, uint16_t square) {
 		return shortside * ( 2 * square - shortside);
 	}
 
@@ -18,8 +18,8 @@ public:
 	/// @return 
 	///
 	bool compareRectangleToSquare(uint16_t shortside, uint16_t longside, uint16_t squareside) {
-		uint16_t large  = calcSquare(shortside, squareside);
-		uint16_t small = calcSquare(longside, squareside);
+		uint16_t large  = calcRectangle(shortside, squareside);
+		uint16_t small = calcRectangle(longside, squareside);
 
 		return (large + small == squareside * squareside) ? true : false;
 	}
@@ -51,7 +51,7 @@ public:
 			uint16_t longside     = it->longside;
 			uint16_t squareside = it->squareside;
 			std::cout << "(" << shortside << ", " << longside << ", " << squareside << ") - (" 
-					  << calcSquare(shortside,  squareside) << ", " << calcSquare (longside, squareside) << ", " 
+					  << calcRectangle(shortside,  squareside) << ", " << calcRectangle (longside, squareside) << ", " 
 					  << squareside * squareside << ")" << std::endl;
 		}
 	}
