@@ -1,0 +1,449 @@
+cscope 15 $HOME/2014/09/Algorithm/ShuffleCard               0000002055
+	@ShuffleCard.cpp
+
+1 
+	~<veùÜ
+>
+
+2 
+	~<io¡»am
+>
+
+4 şas 
+	cShufæeC¬d
+ {
+
+5 
+	mpublic
+:
+
+6 
+shufæeC¬d
+(
+¡d
+::
+veùÜ
+<>& 
+numb”s
+, std::veùÜ<>& 
+modnumb”s
+) {
+
+7 
+middË_šdex
+ = 
+numb”s
+.
+size
+() / 2;
+
+8 
+	m¡d
+::
+veùÜ
+<> 
+uµ”
+;
+
+9 
+	m¡d
+::
+veùÜ
+<> 
+low”
+;
+
+11 
+	mmodnumb”s
+.
+ş—r
+();
+
+12 
+cİy
+(
+numb”s
+.
+begš
+(),‚umb”s.begš(è+ 
+middË_šdex
+, 
+¡d
+::
+back_š£¹”
+(
+uµ”
+));
+
+13 
+cİy
+(
+numb”s
+.
+begš
+(è+ 
+middË_šdex
+,‚umb”s.
+’d
+(), 
+¡d
+::
+back_š£¹”
+(
+low”
+));
+
+15 
+	mi
+ = 0; i < 
+	mmiddË_šdex
+; i++) {
+
+16 
+	m¡d
+::
+veùÜ
+<>::
+™”©Ü
+ 
+uµ
+ = 
+uµ”
+.
+begš
+(è+ 
+i
+;
+
+17 
+	m¡d
+::
+veùÜ
+<>::
+™”©Ü
+ 
+lo
+ = 
+low”
+.
+begš
+(è+ 
+i
+;
+
+18 
+	mmodnumb”s
+.
+push_back
+(*
+uµ
+);
+
+19 
+	mmodnumb”s
+.
+push_back
+(*
+lo
+);
+
+28 
+boŞ
+ 
+com·»C¬d
+(
+couÁ
+, 
+¡d
+::
+veùÜ
+<>& 
+numb”s
+) {
+
+29 
+¡d
+::
+veùÜ
+<> 
+befÜe
+, 
+	gaá”
+;
+
+31 
+cİy
+(
+numb”s
+.
+begš
+(),‚umb”s.
+’d
+(), 
+¡d
+::
+back_š£¹”
+(
+befÜe
+));
+
+32 
+cİy
+(
+numb”s
+.
+begš
+(),‚umb”s.
+’d
+(), 
+¡d
+::
+back_š£¹”
+(
+aá”
+));
+
+34 
+	gi
+ = 0; i < 
+	gcouÁ
+ - 2; i++) {
+
+35 
+	gaá”
+.
+ş—r
+();
+
+36 
+shufæeC¬d
+(
+befÜe
+, 
+aá”
+);
+
+37 
+	gbefÜe
+.
+ş—r
+();
+
+38 
+cİy
+(
+aá”
+.
+begš
+(),‡á”.
+’d
+(), 
+¡d
+::
+back_š£¹”
+(
+befÜe
+));
+
+40 ià(
+	gi
+ =ğ
+couÁ
+ - 4) {
+
+41 
+j
+ = 0; 
+	gj
+ < 
+	gaá”
+.
+size
+(); j++) {
+
+42 
+	g¡d
+::
+cout
+ << 
+aá”
+[
+j
+] << " ";
+
+44 ià((
+	gj
+ % 40) == 39) {
+
+45 
+¡d
+::
+cout
+ << std::
+’dl
+;
+
+49 
+	g¡d
+::
+cout
+ << 
+¡d
+::
+’dl
+;
+
+50 
+	g¡d
+::
+cout
+ << 
+¡d
+::
+’dl
+;
+
+54 ià(
+	gnumb”s
+ =ğ
+aá”
+) {
+
+55  
+Œue
+;
+
+57  
+	gçl£
+;
+
+61 
+š™D©a
+(
+size
+, 
+¡d
+::
+veùÜ
+<>& 
+numb”s
+) {
+
+62 
+i
+ = 0; 
+	gi
+ < 
+	gsize
+; i++) {
+
+63 
+	gnumb”s
+.
+push_back
+(
+i
++1);
+
+68 
+	$maš
+(
+¬gc
+, * 
+¬gv
+[])
+
+70 
+ShufæeC¬d
+ 
+shufæe
+;
+
+71 
+¡d
+::
+veùÜ
+<> 
+numb”s
+;
+
+72 
+¡d
+::
+veùÜ
+<> 
+ªsw”
+;
+
+74 
+i
+ = 1; i <= 100; i++) {
+
+75 
+shufæe
+.
+	`š™D©a
+(2 * 
+i
+, 
+numb”s
+);
+
+76 
+boŞ
+ 
+»suÉ
+ = 
+shufæe
+.
+	`com·»C¬d
+(2 * 
+i
+, 
+numb”s
+);
+
+78 ià(
+»suÉ
+ =ğ
+Œue
+) {
+
+79 
+ªsw”
+.
+	`push_back
+(
+i
+);
+
+82 
+numb”s
+.
+	`ş—r
+();
+
+85 
+¡d
+::
+cout
+ << "tÙ®‚umb” oàshufæi §m:" << 
+ªsw”
+.
+	`size
+(è<< "!!" << std::
+’dl
+;
+
+87 
+	}
+}
+
+	@
+1
+.
+1
+/usr/include
+1
+16
+ShuffleCard.cpp
